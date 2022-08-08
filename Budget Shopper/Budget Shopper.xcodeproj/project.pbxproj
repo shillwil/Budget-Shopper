@@ -13,10 +13,12 @@
 		114A0747286E7EAF00AC486A /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A0746286E7EAF00AC486A /* Tests_macOSLaunchTests.swift */; };
 		114A0748286E7EAF00AC486A /* Budget_ShopperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A0720286E7EAE00AC486A /* Budget_ShopperApp.swift */; };
 		114A0749286E7EAF00AC486A /* Budget_ShopperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A0720286E7EAE00AC486A /* Budget_ShopperApp.swift */; };
-		114A074A286E7EAF00AC486A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A0721286E7EAE00AC486A /* ContentView.swift */; };
-		114A074B286E7EAF00AC486A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A0721286E7EAE00AC486A /* ContentView.swift */; };
+		114A074A286E7EAF00AC486A /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A0721286E7EAE00AC486A /* GroceryListView.swift */; };
+		114A074B286E7EAF00AC486A /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A0721286E7EAE00AC486A /* GroceryListView.swift */; };
 		114A074C286E7EAF00AC486A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114A0722286E7EAF00AC486A /* Assets.xcassets */; };
 		114A074D286E7EAF00AC486A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114A0722286E7EAF00AC486A /* Assets.xcassets */; };
+		11605C1128A1632B0017BC52 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11605C1028A1632B0017BC52 /* GroceryItem.swift */; };
+		11605C1228A1632B0017BC52 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11605C1028A1632B0017BC52 /* GroceryItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		114A0720286E7EAE00AC486A /* Budget_ShopperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget_ShopperApp.swift; sourceTree = "<group>"; };
-		114A0721286E7EAE00AC486A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		114A0721286E7EAE00AC486A /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		114A0722286E7EAF00AC486A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114A0727286E7EAF00AC486A /* Budget Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Budget Shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		114A072D286E7EAF00AC486A /* Budget Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Budget Shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +51,7 @@
 		114A0740286E7EAF00AC486A /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		114A0744286E7EAF00AC486A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		114A0746286E7EAF00AC486A /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		11605C1028A1632B0017BC52 /* GroceryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				114A0720286E7EAE00AC486A /* Budget_ShopperApp.swift */,
-				114A0721286E7EAE00AC486A /* ContentView.swift */,
+				114A0721286E7EAE00AC486A /* GroceryListView.swift */,
 				114A0722286E7EAF00AC486A /* Assets.xcassets */,
+				11605C1028A1632B0017BC52 /* GroceryItem.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -299,7 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114A074A286E7EAF00AC486A /* ContentView.swift in Sources */,
+				114A074A286E7EAF00AC486A /* GroceryListView.swift in Sources */,
+				11605C1128A1632B0017BC52 /* GroceryItem.swift in Sources */,
 				114A0748286E7EAF00AC486A /* Budget_ShopperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114A074B286E7EAF00AC486A /* ContentView.swift in Sources */,
+				114A074B286E7EAF00AC486A /* GroceryListView.swift in Sources */,
+				11605C1228A1632B0017BC52 /* GroceryItem.swift in Sources */,
 				114A0749286E7EAF00AC486A /* Budget_ShopperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
