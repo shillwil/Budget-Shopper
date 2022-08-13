@@ -70,10 +70,10 @@ struct GroceryListView: View {
 		} label: {
 			Text("Finish")
 				.font(.title2).bold()
-				.foregroundColor(Color(uiColor: .label))
+				.foregroundColor(Color(uiColor: .white))
 				.padding()
 				.padding(.horizontal, 100)
-				.background(Color(uiColor: .systemGreen))
+				.background(Color(uiColor: .systemBlue))
 				.cornerRadius(8)
 		}
 		.padding()
