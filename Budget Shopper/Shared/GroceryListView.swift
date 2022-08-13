@@ -11,24 +11,73 @@ struct GroceryListView: View {
     @State var groceryItems: [GroceryItem] = []
     var body: some View {
         NavigationView {
-            List(0..<5) { item in
-                Text("Hello, world!")
-                    .padding()
+            VStack(spacing: 0) {
+                groceryListView
+				
+				Divider()
+					.shadow(color: .black, radius: 5, x: 0, y: -5)
+				
+                bottomTotalView
             }
-            .navigationTitle("Grocery List")
-            .toolbar { plusButton }
+            .background(Color(uiColor: .secondarySystemBackground))
         }
     }
     
     private var plusButton: some View {
-        Button {
-            print("Add new Grocery Item Here")
-        } label: {
-            Image(systemName: "plus")
-                .foregroundColor(Color(uiColor: .label))
-        }
-
+//		NavigationLink {
+//			<#code#>
+//		} label: {
+//			Image(systemName: "plus")
+//				.foregroundColor(Color(uiColor: .label))
+//		}
+		Button {
+			print("Add new Grocery Item Here")
+		} label: {
+			Image(systemName: "plus")
+				.foregroundColor(Color(uiColor: .label))
+		}
     }
+	
+	private var groceryListView: some View {
+		List(0..<5) { item in
+			Text("Hello, world!")
+				.padding()
+		}
+		.navigationTitle("Grocery List")
+		.toolbar { plusButton }
+	}
+	
+	private var bottomTotalView: some View {
+		VStack {
+			HStack {
+				Text("Total")
+				
+				Spacer()
+				
+				Text("$0.00")
+			}
+			.font(.title2).bold()
+			.padding()
+			
+			finishButton
+		}
+		.background(Color(uiColor: .secondarySystemGroupedBackground))
+	}
+	
+	private var finishButton: some View {
+		Button {
+			print("Finish Grocery Trip")
+		} label: {
+			Text("Finish")
+				.font(.title2).bold()
+				.foregroundColor(Color(uiColor: .label))
+				.padding()
+				.padding(.horizontal, 100)
+				.background(Color(uiColor: .systemGreen))
+				.cornerRadius(8)
+		}
+		.padding()
+	}
 }
 
 struct GroceryListView_Previews: PreviewProvider {
