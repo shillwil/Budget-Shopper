@@ -5,9 +5,10 @@
 //  Created by William Shillingford on 8/8/22.
 //
 
-import Foundation
+import SwiftUI
 
-struct GroceryItem {
-    let name: String
-    let price: Double
+struct GroceryItem: Identifiable {
+    var name: String
+    var price: Double
+	let id = UUID()
 }

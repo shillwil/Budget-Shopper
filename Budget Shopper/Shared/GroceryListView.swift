@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GroceryListView: View {
-    @State var groceryItems: [GroceryItem] = []
+    @State var groceryList: GroceryList = GroceryList(list: [])
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -24,14 +24,8 @@ struct GroceryListView: View {
     }
     
     private var plusButton: some View {
-//		NavigationLink {
-//			<#code#>
-//		} label: {
-//			Image(systemName: "plus")
-//				.foregroundColor(Color(uiColor: .label))
-//		}
-		Button {
-			print("Add new Grocery Item Here")
+		NavigationLink {
+			AddGroceryItemView(groceryList: $groceryList)
 		} label: {
 			Image(systemName: "plus")
 				.foregroundColor(Color(uiColor: .label))
@@ -39,9 +33,15 @@ struct GroceryListView: View {
     }
 	
 	private var groceryListView: some View {
-		List(0..<5) { item in
-			Text("Hello, world!")
-				.padding()
+		List(groceryList.list) { item in
+			HStack {
+				Text(item.name)
+					.padding()
+				
+				Spacer()
+				
+				Text("$\(item.price)")
+			}
 		}
 		.navigationTitle("Grocery List")
 		.toolbar { plusButton }
@@ -50,16 +50,20 @@ struct GroceryListView: View {
 	private var bottomTotalView: some View {
 		VStack {
 			HStack {
-				Text("Total")
-				
-				Spacer()
-				
-				Text("$0.00")
+				Group {
+					Text("Total")
+						.bold()
+					
+					Spacer()
+					
+					Text("$0.00")
+						.bold()
+				}
 			}
-			.font(.title2).bold()
+			.font(.title2)
 			.padding()
 			
-			finishButton
+//			finishButton
 		}
 		.background(Color(uiColor: .secondarySystemGroupedBackground))
 	}

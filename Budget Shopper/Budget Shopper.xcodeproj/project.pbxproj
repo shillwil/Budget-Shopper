@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1123180028A169D00044628B /* AddGroceryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112317FF28A169D00044628B /* AddGroceryItemView.swift */; };
+		1123180128A169D00044628B /* AddGroceryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112317FF28A169D00044628B /* AddGroceryItemView.swift */; };
 		114A0739286E7EAF00AC486A /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A0738286E7EAF00AC486A /* Tests_iOS.swift */; };
 		114A073B286E7EAF00AC486A /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A073A286E7EAF00AC486A /* Tests_iOSLaunchTests.swift */; };
 		114A0745286E7EAF00AC486A /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A0744286E7EAF00AC486A /* Tests_macOS.swift */; };
@@ -19,6 +21,8 @@
 		114A074D286E7EAF00AC486A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114A0722286E7EAF00AC486A /* Assets.xcassets */; };
 		11605C1128A1632B0017BC52 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11605C1028A1632B0017BC52 /* GroceryItem.swift */; };
 		11605C1228A1632B0017BC52 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11605C1028A1632B0017BC52 /* GroceryItem.swift */; };
+		11A16BC92915AB6D0017A124 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A16BC82915AB6D0017A124 /* GroceryList.swift */; };
+		11A16BCA2915AB6D0017A124 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A16BC82915AB6D0017A124 /* GroceryList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		112317FF28A169D00044628B /* AddGroceryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroceryItemView.swift; sourceTree = "<group>"; };
 		114A0720286E7EAE00AC486A /* Budget_ShopperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget_ShopperApp.swift; sourceTree = "<group>"; };
 		114A0721286E7EAE00AC486A /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		114A0722286E7EAF00AC486A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		114A0744286E7EAF00AC486A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		114A0746286E7EAF00AC486A /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		11605C1028A1632B0017BC52 /* GroceryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		11A16BC82915AB6D0017A124 /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,8 @@
 				114A0721286E7EAE00AC486A /* GroceryListView.swift */,
 				114A0722286E7EAF00AC486A /* Assets.xcassets */,
 				11605C1028A1632B0017BC52 /* GroceryItem.swift */,
+				11A16BC82915AB6D0017A124 /* GroceryList.swift */,
+				112317FF28A169D00044628B /* AddGroceryItemView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -304,6 +312,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				114A074A286E7EAF00AC486A /* GroceryListView.swift in Sources */,
+				1123180028A169D00044628B /* AddGroceryItemView.swift in Sources */,
+				11A16BC92915AB6D0017A124 /* GroceryList.swift in Sources */,
 				11605C1128A1632B0017BC52 /* GroceryItem.swift in Sources */,
 				114A0748286E7EAF00AC486A /* Budget_ShopperApp.swift in Sources */,
 			);
@@ -314,6 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				114A074B286E7EAF00AC486A /* GroceryListView.swift in Sources */,
+				1123180128A169D00044628B /* AddGroceryItemView.swift in Sources */,
+				11A16BCA2915AB6D0017A124 /* GroceryList.swift in Sources */,
 				11605C1228A1632B0017BC52 /* GroceryItem.swift in Sources */,
 				114A0749286E7EAF00AC486A /* Budget_ShopperApp.swift in Sources */,
 			);
